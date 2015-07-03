@@ -1,4 +1,4 @@
-package com.example.bonjo;
+package com.example.bongo;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -16,7 +16,7 @@ import android.media.SoundPool;
 import android.os.Handler;
 import android.widget.Toast;
 
-public class BonjoBitmap extends ImageView implements OnTouchListener {
+public class BongoBitmap extends ImageView implements OnTouchListener {
 	public Context mycontext;
 	private Canvas myCanvas;
 	public float x = 0, y = 0;// 854x480
@@ -35,7 +35,7 @@ public class BonjoBitmap extends ImageView implements OnTouchListener {
 	private int[] soundId;
 	boolean loaded=false;
 
-	public BonjoBitmap(Context context, AttributeSet attrs) {
+	public BongoBitmap(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		// TODO Auto-generated constructor stub
 		mycontext = context;
@@ -89,7 +89,7 @@ public class BonjoBitmap extends ImageView implements OnTouchListener {
 
 			public void run() {
 				// TODO Auto-generated method stub
-				BonjoBitmap.this.setVisibility(View.VISIBLE);
+				BongoBitmap.this.setVisibility(View.VISIBLE);
 			}
 		});
 		x = event.getX();
@@ -99,10 +99,10 @@ public class BonjoBitmap extends ImageView implements OnTouchListener {
 	}
 	
 	protected void onDraw(Canvas c) {
-		BonjoBitmap.this.myCanvas = c;
+		BongoBitmap.this.myCanvas = c;
 
         if (touched == 1) {
-            Toast.makeText(getContext(),"x: "+x/rx+" y: "+y/ry,Toast.LENGTH_SHORT).show();
+//            Toast.makeText(getContext(),"x: "+x/rx+" y: "+y/ry,Toast.LENGTH_SHORT).show();
             //left part of the left drum that includes both top and bottom
             if ( (x>81*rx && x<216*rx && y>393*ry && y<436*ry) || (x>53*rx && x<216*rx && y>324*ry && y<394*ry) ||
                     (x>53*rx && x<216*rx && y>259*ry && y<323*ry) || (x>91*rx && x<213*rx && y>200*ry && y<258*ry))
@@ -236,7 +236,7 @@ public class BonjoBitmap extends ImageView implements OnTouchListener {
 				@Override
 				public void run() {
 					// TODO Auto-generated method stub
-					BonjoBitmap.this.setVisibility(View.VISIBLE);
+					BongoBitmap.this.setVisibility(View.VISIBLE);
 				}
 			}, 150);
 			touched=0;

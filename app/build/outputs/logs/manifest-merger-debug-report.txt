@@ -33,7 +33,7 @@ ADDED from AndroidManifest.xml:11:5
 		ADDED from AndroidManifest.xml:13:9
 	android:theme
 		ADDED from AndroidManifest.xml:15:9
-activity#com.example.bonjo.MainActivity
+activity#com.example.bongo.MainActivity
 ADDED from AndroidManifest.xml:16:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:19:13

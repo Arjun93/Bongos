@@ -6,7 +6,7 @@
     android:background="@drawable/bidrums"
     android:id="@+id/framelayout">
     
-<com.example.bonjo.BonjoBitmap
+<com.example.bongo.BongoBitmap
         android:id="@+id/img_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

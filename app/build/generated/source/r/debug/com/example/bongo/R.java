@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.example.bonjo;
+package com.example.bongo;
 
 public final class R {
     public static final class attr {

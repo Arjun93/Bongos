@@ -1,4 +1,4 @@
-package com.example.bonjo;
+package com.example.bongo;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,8 +11,8 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		FrameLayout myFrameLayout = (FrameLayout)findViewById(R.id.framelayout);
-		myFrameLayout.setOnTouchListener((BonjoBitmap) findViewById(R.id.img_view));
+		FrameLayout myFrameLayout = (FrameLayout)findViewById(R.id.framelayout); //referencing the framelayout
+		myFrameLayout.setOnTouchListener((BongoBitmap) findViewById(R.id.img_view));
 
 	}
 
